@@ -39,7 +39,7 @@ interface Country {
 // Use the array literal type syntax: Type[]
 // Hint: Make use of the `Country` type.
 
-const countries1: { name: string; code: string; population: number }[] = [
+const countries1: Country[] = [
   {
     name: "China",
     code: "CN",
@@ -56,7 +56,7 @@ const countries1: { name: string; code: string; population: number }[] = [
 // Use the generic interface type `Array`: Array<type>
 // Hint: Make use of the `Country` type.
 
-const countries2: Array<{ name: string; code: string; population: number }> = [
+const countries2: Array<Country> = [
   {
     name: "Thailand",
     code: "TH",
@@ -71,4 +71,4 @@ const countries2: Array<{ name: string; code: string; population: number }> = [
 
 // ----
 
-export {};
+export { countries1, countries2 };
