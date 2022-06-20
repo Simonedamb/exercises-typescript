@@ -20,9 +20,9 @@ interface CountryLanguagesz {
 //
 // This should fix the type error on Line 28.
 
-type CountryWithLanguages = Country;
+type CountryWithLanguages = Country & CountryLanguagesz;
 
-const countryA: CountryWithLanguages & CountryLanguagesz = {
+const countryA: CountryWithLanguages = {
   name: "Greece",
   code: "GR",
   languages: ["Greek"],

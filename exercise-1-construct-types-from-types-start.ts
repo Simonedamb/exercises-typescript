@@ -13,9 +13,7 @@ interface Country {
 // Change the `PartialCountry` type to use the `Partial` utility type.
 // This should fix the type error for the `countryA` object.
 
-type PartialCountry = Country;
-
-const countryA: Partial<PartialCountry> = {
+const countryA: Partial<Country> = {
   code: "CN",
   population: 1_412_600_000,
 };
@@ -24,9 +22,7 @@ const countryA: Partial<PartialCountry> = {
 // This should cause a type error for the `countryB` object.
 // Fix the type error by adding the missing property to the object.
 
-type CompleteCountry = Country;
-
-const countryB: Required<CompleteCountry> = {
+const countryB: Required<Country> = {
   name: "Greece",
   code: "GR",
   currency: "euro",
@@ -37,8 +33,6 @@ const countryB: Required<CompleteCountry> = {
 // Change the `ReadonlyCountry` type to use the `Readonly` utility type.
 // This should cause a type error in the code below.
 // Remove the code that is incorrect.
-
-type ReadonlyCountry = Country;
 
 const countryC: Readonly<Country> = {
   name: "Italy",

@@ -4,7 +4,7 @@
 
 // Fix this use of the `Record` utility type so it constructs a valid type.
 
-const currency: Record<string | string, string> = {
+const currency: Record<string, string> = {
   name: "United States dollar",
   code: "USD",
   symbol: "$",

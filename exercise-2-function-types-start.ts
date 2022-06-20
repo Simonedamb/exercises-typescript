@@ -4,13 +4,13 @@
 
 // Add types to this function declaration.
 
-function doubleThePopulation(value: boolean) {
-  return value;
+function doubleThePopulation(value) {
+  return value * 2;
 }
 
 // Correct or remove the function calls which cause type errors.
 
-doubleThePopulation(false);
+doubleThePopulation(5);
 
 // Alter this function so the `language2` parameter is optional.
 // Hint: Check `language2` is not `undefined` before passing it to `console.log()`.
